@@ -16,6 +16,14 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+.bar {
+    width: auto;
+    height: 5px;
+    border-radius: 0.5rem;
+    margin: 0px;
+    padding: 0px;
+    background-image: linear-gradient(90deg, #326743,#5C946E);
+}
 .title 
     h1 {
     font-size: 36px;
@@ -29,8 +37,11 @@
     font-weight: 600;
     line-height: 2em;
     color: var(--theme-accent-text);
-    padding-bottom: 2rem;
+    padding-bottom: 0.75rem;
     }
+.bodytext {
+    padding-top: 2.5rem;
+}
 .bodytext * {
     font-size: 18px;
     line-height: 2em;
@@ -40,12 +51,15 @@
 p {
     margin-bottom: 0.75em;
 }
-* {
+.text {
     font-family: "Domine";
 }
 ::selection {
     background: #5C946E; 
     color: #F9F1EC; 
+}
+:root {
+    scrollbar-width: none !important;
 }
 li > a, p > a, h1 > a, h2 > a {
     background: linear-gradient(to right, var(--theme-accent-highlight), var(--theme-accent-highlight-mix));
@@ -60,8 +74,6 @@ li > a:hover, p > a:hover {
     background-position: 100% 100%;
 }
 body {
-    margin-top: 16rem;
-    margin-bottom: 4rem;
     margin-left: auto;
     margin-right: auto;
     padding-left: 4rem;
@@ -70,6 +82,10 @@ body {
     background-color: #F9F1EC;
     color: #1D201D;
     /*max-width: calc(100% - 20rem);*/
+}
+.post {
+    margin-top: 16rem;
+    margin-bottom: 4rem;
 }
 :root {
 --theme-main: #F9F1EC;
@@ -84,4 +100,5 @@ body {
 		--theme-accent-difference: #9B6F8D;
         --text-normal: #1D201D;
 		--text-muted: #949E94;
+        --name-gradient: 315deg, #987B65, #866860, #76585D, #664B5A, #4E3B52;
 }
