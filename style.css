@@ -16,14 +16,13 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-.bar {
+/*.bar {
     width: auto;
     height: 5px;
     border-radius: 0.5rem;
     margin: 0px;
-    padding: 0px;
     background-image: linear-gradient(90deg, #326743,#5C946E);
-}
+}*/
 .title 
     h1 {
     font-size: 36px;
@@ -37,8 +36,16 @@
     font-weight: 600;
     line-height: 2em;
     color: var(--theme-accent-text);
-    padding-bottom: 0.75rem;
     }
+    h3 {
+    font-size: 18px;
+    padding-bottom: 0.75rem;
+    font-weight: 800;
+    color: var(--theme-accent-username);
+    }
+.title {
+    padding-top: 256px;
+}
 .bodytext {
     padding-top: 2.5rem;
 }
@@ -78,14 +85,14 @@ body {
     margin-right: auto;
     padding-left: 4rem;
     padding-right: 4rem;
+    padding-bottom: 4rem;
     max-width: 50em;
     background-color: #F9F1EC;
     color: #1D201D;
     /*max-width: calc(100% - 20rem);*/
 }
 .post {
-    margin-top: 16rem;
-    margin-bottom: 4rem;
+    /*margin-top: 16rem;*/
 }
 :root {
 --theme-main: #F9F1EC;
