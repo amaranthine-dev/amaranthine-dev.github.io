@@ -38,7 +38,7 @@
     color: var(--theme-accent-text);
     }
     h3 {
-    font-size: 18px;
+    font-size: 20px;
     padding-bottom: 0.75rem;
     font-weight: 800;
     color: var(--theme-accent-username);
@@ -90,6 +90,9 @@ body {
     background-color: #F9F1EC;
     color: #1D201D;
     /*max-width: calc(100% - 20rem);*/
+}
+.mutedtext {
+    color: var(--text-muted);
 }
 .post {
     /*margin-top: 16rem;*/
