@@ -1,0 +1,87 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background: 0 0;
+    text-decoration: none;
+    outline: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    color: inherit;
+    border: 0;
+    list-style: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.title 
+    h1 {
+    font-size: 36px;
+    font-weight: 800;
+    width: 100%;
+    line-height: 1em;
+    color: var(--theme-accent-username);
+    }
+    h2 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 2em;
+    color: var(--theme-accent-text);
+    padding-bottom: 2rem;
+    }
+.bodytext * {
+    font-size: 18px;
+    line-height: 2em;
+    letter-spacing: 0.05em;
+    font-weight: 400;
+}
+p {
+    margin-bottom: 0.75em;
+}
+* {
+    font-family: "Domine";
+}
+::selection {
+    background: #5C946E; 
+    color: #F9F1EC; 
+}
+li > a, p > a, h1 > a, h2 > a {
+    background: linear-gradient(to right, var(--theme-accent-highlight), var(--theme-accent-highlight-mix));
+    background-size: 300% 40%;
+    background-repeat: no-repeat;
+    background-position: 0 120%;
+    transition-property: background-position;
+    transition-duration: 250ms;
+    padding: 0;
+}
+li > a:hover, p > a:hover {
+    background-position: 100% 100%;
+}
+body {
+    margin-top: 16rem;
+    margin-bottom: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    max-width: 50em;
+    background-color: #F9F1EC;
+    color: #1D201D;
+    /*max-width: calc(100% - 20rem);*/
+}
+:root {
+--theme-main: #F9F1EC;
+		--theme-accent: #5C946E;
+		--theme-accent-brighter: #80C2AF;
+		--theme-accent-superbright: #BDDACE;
+		--theme-accent-highlight: #E2E9E3;
+        --theme-accent-highlight-mix: #D0E2D6;
+		--theme-accent-username: #326743;
+		--theme-accent-text: #292e29;
+		--theme-accent-superdark: #181B18;
+		--theme-accent-difference: #9B6F8D;
+        --text-normal: #1D201D;
+		--text-muted: #949E94;
+}
