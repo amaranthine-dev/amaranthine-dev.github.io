@@ -21,13 +21,15 @@
     h2 {
     font-size: 22px;
     font-weight: 600;
-    line-height: 2em;
+    line-height: 1.5em;
     color: #292e29;
+    margin-bottom: 0.25em;
     }
     h3 {
     font-size: 20px;
-    padding-bottom: 0.75rem;
     font-weight: 800;
+    line-height: 1.5em;
+    padding-bottom: 0.75rem;
     color: #326743;
     }
 }
@@ -78,6 +80,7 @@ body {
 }
 .datetag {
     color: #798679;
+    font-size: 18px;
 }
 .navlink {
     color: #326743;
