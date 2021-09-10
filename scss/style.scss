@@ -77,21 +77,14 @@ body {
     /*max-width: calc(100% - 20rem);*/
 }
 .datetag {
-    color: var(--text-muted);
+    color: #798679;
 }
-.boldbodytext {
-    font-weight: 600;
+.navlink {
+    color: #326743;
+    a {
+    background: transparent;
+    }
 }
-:root {
---theme-main: #F9F1EC;
-		--theme-accent: #5C946E;
-		--theme-accent-brighter: #80C2AF;
-		--theme-accent-superbright: #BDDACE;
-		--theme-accent-highlight: #E2E9E3;
-        --theme-accent-highlight-mix: #D0E2D6;
-		--theme-accent-username: #326743;
-		--theme-accent-text: #292e29;
-		--theme-accent-superdark: #181B18;
-        --text-normal: #1D201D;
-		--text-muted: #798679;
+.boldnav {
+    font-weight: 800;
 }
