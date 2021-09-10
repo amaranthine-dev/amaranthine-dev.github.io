@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400&display=swap');
 *, ::after, ::before {
     box-sizing: border-box;
     padding: 0;
@@ -83,23 +84,16 @@ li > a:hover, p > a:hover {
 body {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     padding-bottom: 4rem;
-    max-width: 50em;
+    max-width: 50rem;
     background-color: #F9F1EC;
     color: #1D201D;
     /*max-width: calc(100% - 20rem);*/
 }
 .datetag {
     color: var(--text-muted);
-    display: block;
-    float: right;
-}
-.postlinktitle {
-    width: 65%;
-    display: block;
-    float: left;
 }
 .boldbodytext {
     font-weight: 600;
@@ -116,6 +110,6 @@ body {
 		--theme-accent-superdark: #181B18;
 		--theme-accent-difference: #9B6F8D;
         --text-normal: #1D201D;
-		--text-muted: #949E94;
+		--text-muted: #798679;
         --name-gradient: 315deg, #987B65, #866860, #76585D, #664B5A, #4E3B52;
 }
