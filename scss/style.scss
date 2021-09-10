@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400&display=swap');
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    text-decoration: none;
+    color: inherit;
+    border: 0;
+    list-style: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.title {
+    padding-top: 256px;
+    h1 {
+    font-size: 36px;
+    font-weight: 800;
+    width: 100%;
+    line-height: 1em;
+    color: #326743;
+    }
+    h2 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 2em;
+    color: #292e29;
+    }
+    h3 {
+    font-size: 20px;
+    padding-bottom: 0.75rem;
+    font-weight: 800;
+    color: #326743;
+    }
+}
+.bodytext {
+    padding-top: 2.5rem;
+    * {
+        font-size: 18px;
+        line-height: 2em;
+        letter-spacing: 0.05em;
+        font-weight: 400;
+    }
+}
+p {
+    margin-bottom: 0.75em;
+}
+.text {
+    font-family: "Domine";
+}
+::selection {
+    background: #5C946E; 
+    color: #F9F1EC; 
+}
+:root {
+    scrollbar-width: none !important;
+}
+li > a, p > a, h1 > a, h2 > a {
+    background: linear-gradient(to right, #E2E9E3, #D0E2D6);
+    background-size: 300% 40%;
+    background-repeat: no-repeat;
+    background-position: 0 120%;
+    transition-property: background-position;
+    transition-duration: 250ms;
+    padding: 0;
+}
+li > a:hover, p > a:hover {
+    background-position: 100% 100%;
+}
+body {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 4rem;
+    max-width: 50rem;
+    background-color: #F9F1EC;
+    color: #1D201D;
+    /*max-width: calc(100% - 20rem);*/
+}
+.datetag {
+    color: var(--text-muted);
+}
+.boldbodytext {
+    font-weight: 600;
+}
+:root {
+--theme-main: #F9F1EC;
+		--theme-accent: #5C946E;
+		--theme-accent-brighter: #80C2AF;
+		--theme-accent-superbright: #BDDACE;
+		--theme-accent-highlight: #E2E9E3;
+        --theme-accent-highlight-mix: #D0E2D6;
+		--theme-accent-username: #326743;
+		--theme-accent-text: #292e29;
+		--theme-accent-superdark: #181B18;
+        --text-normal: #1D201D;
+		--text-muted: #798679;
+}
