@@ -9,6 +9,9 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+summary::-webkit-details-marker,details[open] summary {
+    display:none
+}
 .title {
     padding-top: 256px;
     h1 {
