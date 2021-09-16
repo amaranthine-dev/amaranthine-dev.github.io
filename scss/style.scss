@@ -26,10 +26,9 @@ summary::-webkit-details-marker,details[open] summary {
     font-weight: 600;
     line-height: 1.5em;
     color: #292e29;
-    margin-bottom: 0.25em;
     }
     h3 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 800;
     line-height: 1.5em;
     padding-bottom: 0.75rem;
@@ -58,7 +57,7 @@ p {
 :root {
     scrollbar-width: none !important;
 }
-li > a, p > a, h1 > a, h2 > a {
+li > a, p > a, h1 > a, h2 > a, .navlink {
     background: linear-gradient(to right, #E2E9E3, #D0E2D6);
     background-size: 300% 40%;
     background-repeat: no-repeat;
