@@ -80,6 +80,15 @@ body {
     color: #1D201D;
     /*max-width: calc(100% - 20rem);*/
 }
+img {
+    max-width: 50rem;
+    width: 90%;
+    height: 90%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: #f7f7f7 4rem solid;
+    box-shadow:0 5px 15px rgba(0,0,0,.07),0 15px 25px rgba(100,100,100,.3);
+}
 .datetag {
     color: #798679;
     font-size: 18px;
