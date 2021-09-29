@@ -39,10 +39,15 @@ summary::-webkit-details-marker,details[open] summary {
     padding-top: 2.5rem;
     * {
         font-size: 18px;
-        line-height: 2em;
+        line-height: 1.75em;
         letter-spacing: 0.05em;
         font-weight: 400;
     }
+}
+rt {
+    font-size: 14px !important;
+    font-style: italic;
+    color: #326743;
 }
 p {
     margin-bottom: 0.75em;
