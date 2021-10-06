@@ -52,6 +52,7 @@ summary::-webkit-details-marker,details[open] summary {
 }
 .bodytext {
     padding-top: 2.5rem;
+    font-family: "Domine", serif;
     * {
         font-size: 18px;
         line-height: 1.75em;
@@ -68,8 +69,7 @@ p {
     margin-bottom: 0.75em;
 }
 ::selection {
-    background: #005596;
-    color: #ffffff; 
+    background: #0091ff18; 
 }
 :root {
     scrollbar-width: none !important;
@@ -90,10 +90,10 @@ li > a:hover, p > a:hover {
 body {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     padding-bottom: 4rem;
-    max-width: 1000px;
+    max-width: 800px;
     background-color: #ffffff;
     color: #1D201D;
     /*max-width: calc(100% - 20rem);*/
@@ -112,6 +112,7 @@ img:not(.slab img) {
 .datetag {
     color: #798679;
     font-size: 18px;
+    user-select: none;
 }
 .navlink {
     color: #606060;
@@ -250,6 +251,7 @@ input {
     font-size: 18px;
     color: #404040;
     background-color: #ffffff;
+    box-shadow: inset 0px 0px 2px rgba(58, 65, 111, 0.5);
     //box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25), inset -8px -8px 32px rgba(88, 88, 88, 0.1), inset 8px 8px 32px rgba(255, 255, 255, 0.1);
     input {
         position: relative;
@@ -267,4 +269,6 @@ input {
 background: radial-gradient( 100% 100% at 100% 0%, #5ADAFF 0%, #5468FF 100% );
 box-shadow: 0px 2px 4px rgba(45, 35, 66, 0.4),0px 7px 13px -3px rgba(45, 35, 66, 0.3),inset 0px -3px 0px rgba(58, 65, 111, 0.5);
 text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+
+#0033ff
 */
