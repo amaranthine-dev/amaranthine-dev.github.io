@@ -1,0 +1,31 @@
+/// Here most colors are set, mainly for dark mode compatiblity
+
+// colors barely inspired by the VS Code theme ayu.
+
+@media (prefers-color-scheme: light) {
+    body {
+        --m-bg: #ffffff;
+        --m-fg: #0b0e14;
+        --alt-fg: #404040;
+        --m-h1: #0b0e14;
+        --m-h2: #606060;
+        --m-h3: #404040;
+        --rt: var(--m-h2);
+        --dt: var(--m-h2);
+        --nvl: var(--m-h2);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        --m-bg: #0b0e14;
+        --alt-bg: #101e24;
+        --m-fg: #ffffff;
+        --m-h1: #ffffff;
+        --m-h2: #b0b0b0;
+        --m-h3: #cecece;
+        --rt: var(--m-h2);
+        --dt: var(--m-h2);
+        --nvl: var(--m-h2);
+    }
+}
