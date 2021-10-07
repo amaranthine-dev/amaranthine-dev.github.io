@@ -5,15 +5,29 @@
 @media (prefers-color-scheme: light) {
     body {
 
+        // main background color, for background.
         --m-bg: #ffffff;
+
+        // alt background color, for login card.
         --m-fg: #0b0e14;
+
+        // main foreground color, for text.
         --alt-fg: #404040;
+
+        // main h1 - h3 colors, for headings.
         --m-h1: #0b0e14;
         --m-h2: #606060;
         --m-h3: #404040;
+
+        // <rt> color.
         --rt: var(--m-h2);
+
+        // datetag color.
         --dt: var(--m-h2);
+
+        // navlink color
         --nvl: var(--m-h2);
+
 
     }
 }
@@ -21,15 +35,29 @@
 @media (prefers-color-scheme: dark) {
     body {
 
+        // main background color, for background.
         --m-bg: #0b0e14;
+
+        // alt background color, for login card.
         --alt-bg: #101e24;
+
+        // main foreground color, for text.
         --m-fg: #ffffff;
+
+        // main h1 - h3 colors, for headings.
         --m-h1: #ffffff;
         --m-h2: #b0b0b0;
         --m-h3: #cecece;
+
+        // <rt> color.
         --rt: var(--m-h2);
-        --dt: var(--m-h2);
+
+        // datetag color.
+        --dt: var(--m-h2); 
+
+        // navlink color
         --nvl: var(--m-h2);
         
+
     }
 }
