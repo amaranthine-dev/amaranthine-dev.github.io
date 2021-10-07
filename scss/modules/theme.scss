@@ -8,16 +8,17 @@
         // main background color, for background.
         --m-bg: #ffffff;
 
-        // alt background color, for login card.
-        --m-fg: #0b0e14;
-
         // main foreground color, for text.
-        --alt-fg: #404040;
+        --m-fg: #000000;
+
+        // alt colors, for login card.
+        --alt-bg: #ffffff;
+        --alt-fg: #00000040;
 
         // main h1 - h3 colors, for headings.
-        --m-h1: #0b0e14;
-        --m-h2: #606060;
-        --m-h3: #404040;
+        --m-h1: #000000;
+        --m-h2: #000000c0;
+        --m-h3: #00000080;
 
         // <rt> color.
         --rt: var(--m-h2);
@@ -25,9 +26,19 @@
         // datetag color.
         --dt: var(--m-h2);
 
+        // link color.
+        --l-1: #00a6ff40;
+        --l-2: #0091ff80;
+
         // navlink color
         --nvl: var(--m-h2);
 
+        // selection color.
+        --sel: var(--l-1);
+
+        // input background colors.
+        --i-1: #00a6ff;
+        --i-2: #0091ff;
 
     }
 }
@@ -36,18 +47,18 @@
     body {
 
         // main background color, for background.
-        --m-bg: #0b0e14;
+        --m-bg: #000000;
 
         // alt background color, for login card.
-        --alt-bg: #101e24;
+        --alt-bg: #ffffff18;
 
         // main foreground color, for text.
         --m-fg: #ffffff;
 
         // main h1 - h3 colors, for headings.
         --m-h1: #ffffff;
-        --m-h2: #b0b0b0;
-        --m-h3: #cecece;
+        --m-h2: #ffffffc0;
+        --m-h3: #ffffff80;
 
         // <rt> color.
         --rt: var(--m-h2);
@@ -55,9 +66,19 @@
         // datetag color.
         --dt: var(--m-h2); 
 
+        // link color.
+        --l-1: #00a6ff40;
+        --l-2: #0091ff80;
+
         // navlink color
         --nvl: var(--m-h2);
-        
 
+        // selection color.
+        --sel: var(--l-2);
+
+        // input background colors.
+        --i-1: #001c9b;
+        --i-2: #160078;
+        
     }
 }
