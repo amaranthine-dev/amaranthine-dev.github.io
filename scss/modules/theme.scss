@@ -4,6 +4,7 @@
 
 @media (prefers-color-scheme: light) {
     body {
+
         --m-bg: #ffffff;
         --m-fg: #0b0e14;
         --alt-fg: #404040;
@@ -13,11 +14,13 @@
         --rt: var(--m-h2);
         --dt: var(--m-h2);
         --nvl: var(--m-h2);
+
     }
 }
 
 @media (prefers-color-scheme: dark) {
     body {
+
         --m-bg: #0b0e14;
         --alt-bg: #101e24;
         --m-fg: #ffffff;
@@ -27,5 +30,6 @@
         --rt: var(--m-h2);
         --dt: var(--m-h2);
         --nvl: var(--m-h2);
+        
     }
 }
