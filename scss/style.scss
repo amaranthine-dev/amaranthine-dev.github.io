@@ -1,7 +1,10 @@
+@import 'modules/theme';
 @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;600&family=IBM+Plex+Mono:wght@500;700&display=swap');
 html, body {
     height: 100%;
 }
+// normalize properties
+
 *, ::after, ::before {
     box-sizing: border-box;
     margin: 0;
@@ -12,9 +15,13 @@ html, body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+// hide summary when opened
+
 summary::-webkit-details-marker,details[open] summary {
     display:none
 }
+
 .post {
     padding-top: 128px;
     padding-bottom: 128px;
@@ -25,29 +32,21 @@ summary::-webkit-details-marker,details[open] summary {
     font-weight: 800;
     width: 100%;
     line-height: 1em;
-    color: #1D201D;
+    color: var(--m-h1);
     }
     h2 {
     font-size: 22px;
     font-weight: 600;
     line-height: 1.5em;
-    color: #606060;
+    color: var(--m-h2);
     }
     h3 {
     font-size: 18px;
     font-weight: 800;
     line-height: 1.5em;
     padding-bottom: 0.75rem;
-    color: #606060;
+    color: var(--m-h3);
     }
-    font-family: "Domine", serif;
-}
-.subtitle {
-    font-size: 24px;
-    font-weight: 800;
-    width: 100%;
-    line-height: 1em;
-    color: #1D201D;
     font-family: "Domine", serif;
 }
 .bodytext {
@@ -63,7 +62,7 @@ summary::-webkit-details-marker,details[open] summary {
 rt {
     font-size: 14px !important;
     font-style: italic;
-    color: #606060;
+    color: var(--rt);
 }
 p {
     margin-bottom: 0.75em;
@@ -94,8 +93,8 @@ body {
     padding-right: 1.5rem;
     padding-bottom: 4rem;
     max-width: 800px;
-    background-color: #ffffff;
-    color: #1D201D;
+    background-color: var(--m-bg);
+    color: var(--m-fg);
     /*max-width: calc(100% - 20rem);*/
 }
 img {
@@ -110,12 +109,12 @@ img:not(.slab img) {
     margin-bottom: 2rem;
 }
 .datetag {
-    color: #798679;
+    color: var(--dt);
     font-size: 18px;
     user-select: none;
 }
 .navlink {
-    color: #606060;
+    color: var(--nvl);
     font-weight: 800;
     a {
     background: transparent;
@@ -135,7 +134,7 @@ img:not(.slab img) {
     width: 33%;
 }
 .slab {
-    color: #1D201D;
+    color: var(--m-fg);
     margin: 16px 4px 16px 4px;
     box-shadow: 0px 0px 4px 0px rgba(100,100,100,0.25), 0px 0px 2px 2px rgba(100,100,100,0.25);
     border-radius: 8px;
@@ -191,7 +190,7 @@ input {
     justify-content: center;
     flex-direction: column;
     //background-image: linear-gradient(235deg, #dceeff5e, #dceeff81, #dceeff);
-    background-color: #ffffff;
+    background-color: var(--alt-bg);
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25); 
     padding: 16px;
     margin: auto;
@@ -205,7 +204,7 @@ input {
     font-family: "IBM Plex Mono", serif;
     font-size: 48px;
     font-weight: 800;
-    color: #1D201D;
+    color: var(--m-fg);
     line-height: 1em;
     width: 432px;
     margin: auto;
@@ -217,8 +216,8 @@ input {
     position: relative;
     padding: 8px 0px 8px 16px;
     border-radius: 16px;
-    background-color: #ffffff;
-    color: #404040;
+    background-color: var(--m-bg);
+    color: var(--alt-fg);
     box-shadow: 0px 2px 4px rgba(45, 35, 66, 0.2),0px 7px 13px -3px rgba(45, 35, 66, 0.1);    
     transition: box-shadow 0.1s ease-in-out;
     p {
@@ -230,7 +229,7 @@ input {
     width: 400px;
     height: 50px;
     background: radial-gradient( 100% 100% at 100% 0%, #00a6ff 0%, #0091ff 100% );
-    color: #ffffff;
+    color: var(--m-fg);
     opacity: 1;
     input {
         width: 95%;
@@ -239,7 +238,7 @@ input {
     }
     ::placeholder {
         opacity: 0.5;
-        color: #ffffff;
+        color: var(--m-fg);
         font-weight: 500;
     }
 }
@@ -249,8 +248,8 @@ input {
     height: 40px;
     margin-bottom: 0px;
     font-size: 18px;
-    color: #404040;
-    background-color: #ffffff;
+    color: var(--m-fg);
+    background-color: var(--m-bg);
     box-shadow: inset 0px 0px 2px rgba(58, 65, 111, 0.5);
     //box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25), inset -8px -8px 32px rgba(88, 88, 88, 0.1), inset 8px 8px 32px rgba(255, 255, 255, 0.1);
     input {
