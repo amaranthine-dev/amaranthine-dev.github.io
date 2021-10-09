@@ -1,0 +1,79 @@
+// css for the fancy posts
+
+.header.header img {
+    margin: unset;
+    border-radius: unset;
+    user-select: none;
+}
+.header {
+    max-height: 400px;
+    height: 400px;
+    width: auto;
+    img {
+        object-fit: cover;
+        object-position: center center;
+        overflow: hidden;
+    }
+    //background-size: contain;
+    //background-repeat: no-repeat;
+    //-position: 50% 50%;
+}
+.blogpost {
+    display: flex;
+    margin: auto;
+    margin-bottom: 256px;
+    max-width: 850px;
+    padding: 0px 25px 0px 25px !important;
+    padding-left: 25px;
+    padding-right: 25px;
+    img {
+        margin: unset !important;
+        width: unset;
+        height: unset;
+        border-radius: unset;
+        box-shadow: unset;
+        user-select: none;
+    }
+}
+.bodytext.bodytext {
+    padding-top: unset;
+    p {
+        font-size: 18px;
+    }
+}
+picture {
+    width: 100px;
+    height: 100px;
+}
+.info {
+    width: 100px;
+    //margin-top: 0px;
+    margin-right: 25px;
+    font-family: "Domine", serif;
+    p {
+        margin-top: 25px;
+        font-style: italic;
+        font-size: 16px;
+        a {
+            font-style: normal;
+            font-weight: 600;
+        }
+    }
+}
+.info em {
+    font-weight: 800;
+    font-style: normal;
+}
+.blogtitle {
+    display: flex;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    max-width: 800px;
+    padding-left: 125px;
+    padding-right: 25px;
+    font-size: 18px;
+    font-weight: 800;
+    font-family: "Domine", serif;
+    color: var(--m-h1);
+}
