@@ -1,0 +1,49 @@
+// css for the main greeter page.
+
+body {
+    height: unset !important;
+    max-width: 800px;
+}
+
+.maintitlecontainer {
+    margin: 0px auto 0px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.maintitle {
+    height: auto;
+    margin-bottom: 25px;
+}
+.titletext {
+    font-size: 64px;
+    font-family: "Domine", serif;
+    text-align: center;
+}
+.logo {
+    width: 200px;
+    height: 200px;
+    margin: 200px auto 50px auto;
+    img {
+        border-radius: unset;
+        box-shadow: unset;
+    }
+}
+.maintitle ul {
+    padding: unset;
+}
+.homelinks {
+    max-width: 450px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: auto;
+    text-align: center;
+    ul {
+        padding: 0px;
+    }
+    li {
+        display: inline-block;
+        font-size: 20px;
+    }
+}
