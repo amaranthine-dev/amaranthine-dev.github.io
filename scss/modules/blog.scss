@@ -41,7 +41,7 @@
         font-size: 18px;
     }
 }
-picture {
+.blogpost picture {
     width: 100px;
     height: 100px;
 }
@@ -76,4 +76,7 @@ picture {
     font-weight: 800;
     font-family: "Domine", serif;
     color: var(--m-h1);
+}
+.blogtext {
+    text-indent: 50px;
 }
