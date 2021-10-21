@@ -1,0 +1,37 @@
+@import 'theme.scss';
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: var(--m-bg);
+    color: var(--m-fg);
+}
+
+p {
+    font-weight: 400;
+    font-size: 14pt;
+    color: var(--m-fg);
+}
+
+a {
+    background: linear-gradient(to right, var(--l-1), var(--l-2));
+    background-size: 300% 25%;
+    background-repeat: no-repeat;
+    background-position: 0 120%;
+    transition-property: background-position;
+    transition-duration: 250ms;
+    padding: 0;
+    color: var(--m-fg);
+}
+
+a:hover {
+    background-position: 100% 100%;
+}
+
+rt {
+    font-size: 12pt;
+    font-style: italic;
+    color: var(--rt);
+}

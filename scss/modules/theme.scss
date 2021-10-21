@@ -1,6 +1,4 @@
-/// Here most colors are set, mainly for dark mode compatiblity
-
-// colors barely inspired by the VS Code theme ayu.
+/// Here most colors are set, mainly for dark mode compatiblity.
 
 @media (prefers-color-scheme: light) {
     body {
@@ -67,8 +65,8 @@
         --dt: var(--m-h2); 
 
         // link color.
-        --l-1: #00a6ff40;
-        --l-2: #0091ff80;
+        --l-1: #00a6ff80;
+        --l-2: #0091ffb0;
 
         // navlink color
         --nvl: var(--m-h2);

@@ -1,0 +1,86 @@
+input {
+    border: none;
+    outline: none;
+}
+.inputcontainer {
+    display: flex;
+    width: 432px; 
+    height: auto;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    //background-image: linear-gradient(235deg, #dceeff5e, #dceeff81, #dceeff);
+    background-color: var(--alt-bg);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25); 
+    padding: 16px;
+    margin: auto;
+    border-radius: 32px;
+    p {
+        margin-bottom: 8px;
+    }
+}
+.inputtitle p {
+    display: flex;
+    font-family: "IBM Plex Mono", serif;
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--m-fg);
+    line-height: 1em;
+    width: 432px;
+    margin: auto;
+    margin-bottom: 32px;
+}
+.inputtest {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    position: relative;
+    padding: 8px 0px 8px 16px;
+    border-radius: 16px;
+    background-color: var(--m-bg);
+    color: var(--alt-fg);
+    box-shadow: 0px 2px 4px rgba(45, 35, 66, 0.2),0px 7px 13px -3px rgba(45, 35, 66, 0.1);    
+    transition: box-shadow 0.1s ease-in-out;
+    p {
+        position: relative;
+        padding: 8px 0px 8px 16px;
+    }
+}
+.accdetails {
+    width: 400px;
+    height: 50px;
+    background: radial-gradient( 100% 100% at 100% 0%, var(--i-1) 0%, var(--i-2) 100% );
+    color: var(--m-fg);
+    opacity: 1;
+    input {
+        width: 95%;
+        background-color: transparent;
+        font-weight: 600;
+    }
+    ::placeholder {
+        opacity: 0.5;
+        color: var(--m-fg);
+        font-weight: 500;
+    }
+}
+.submit {
+    display: flex;
+    width: 100px;
+    height: 40px;
+    margin-bottom: 0px;
+    font-size: 18px;
+    color: var(--m-fg);
+    background-color: var(--alt-bg);
+    box-shadow: inset 0px 0px 2px rgba(58, 65, 111, 0.5);
+    //box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25), inset -8px -8px 32px rgba(88, 88, 88, 0.1), inset 8px 8px 32px rgba(255, 255, 255, 0.1);
+    input {
+        position: relative;
+        background-color: transparent;
+        vertical-align: top;
+        bottom: 5px;
+    }
+}
+.inputtest:focus-within:not(.submit) {
+    //box-shadow: 0px 0px 8px #4588ED, 0px 0px 8px #4588ED;
+    box-shadow: 0px 2px 4px rgba(45, 35, 66, 0.4),0px 7px 13px -3px rgba(45, 35, 66, 0.3),inset 0px -4px 0px rgba(58, 65, 111, 0.5);
+    color: #ffffff;
+}

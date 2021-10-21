@@ -1,25 +1,13 @@
+@import 'modules/reset.scss';
 @import 'modules/theme';
-@import 'modules/blog.scss';
-@import 'modules/mainpage.scss';
+@import 'modules/universal.scss';
+//@import 'modules/blog.scss';
+//@import 'modules/mainpage.scss';
+//@import 'modules/experiments.scss';
 @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;600&family=IBM+Plex+Mono:wght@500;700&display=swap');
-html, body {
-    height: 100%;
-}
-// normalize properties
 
-*, ::after, ::before {
-    box-sizing: border-box;
-    margin: 0;
-    text-decoration: none;
-    color: inherit;
-    border: 0;
-    list-style: none;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
 
-// hide summary when opened
-
+/*
 summary::-webkit-details-marker,details[open] summary {
     display:none
 }
@@ -64,14 +52,14 @@ summary::-webkit-details-marker,details[open] summary {
     }
 }
 rt {
-    font-size: 14px !important;
+    font-size: 12pt !important;
     font-style: italic;
     color: var(--rt);
 }
 p {
     margin-bottom: 0.75em;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 14pt !important;
 }
 ::selection {
     background: var(--sel); 
@@ -97,7 +85,6 @@ body {
     margin-right: auto;
     background-color: var(--m-bg);
     color: var(--m-fg);
-    /*max-width: calc(100% - 20rem);*/
 }
 img {
     width: 100%;
@@ -121,155 +108,4 @@ img:not(.slab img) {
     a {
     background: transparent;
     }
-}
-
-///// tomabel dedicated css below here
-
-.col {
-    display: table-cell;
-    vertical-align: top;
-}
-.w-40 {
-    width: 40%;
-}
-.w-33 {
-    width: 33%;
-}
-.slab {
-    color: var(--m-fg);
-    margin: 16px 4px 16px 4px;
-    box-shadow: 0px 0px 4px 0px rgba(100,100,100,0.25), 0px 0px 2px 2px rgba(100,100,100,0.25);
-    border-radius: 8px;
-    position: relative;
-}
-.slab {
-    background-color: transparent;
-}
-.slab p {
-    padding: 12px;
-    font-family: "Domine", serif;
-    line-height: 1.5em;
-}
-a {
-    font-family: "IBM Plex Mono", monospace;
-}
-.navbar {
-    padding: 1.5rem 0rem;
-    text-align: center;
-}
-nav li {
-    display: inline-block;
-    font-size: 18px;
-}
-.active {
-    font-weight: 600;
-}
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 0rem;
-}
-.cardlink { 
-    position:absolute; 
-    width:100%;
-    height:100%;
-    top:0;
-    left: 0;
-    z-index: 1;
-}
-
-/////   experiments css 
-
-input {
-    border: none;
-    outline: none;
-}
-.inputcontainer {
-    display: flex;
-    width: 432px; 
-    height: auto;
-    align-items: left;
-    justify-content: center;
-    flex-direction: column;
-    //background-image: linear-gradient(235deg, #dceeff5e, #dceeff81, #dceeff);
-    background-color: var(--alt-bg);
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25); 
-    padding: 16px;
-    margin: auto;
-    border-radius: 32px;
-    p {
-        margin-bottom: 8px;
-    }
-}
-.inputtitle p {
-    display: flex;
-    font-family: "IBM Plex Mono", serif;
-    font-size: 48px;
-    font-weight: 800;
-    color: var(--m-fg);
-    line-height: 1em;
-    width: 432px;
-    margin: auto;
-    margin-bottom: 32px;
-}
-.inputtest {
-    margin-top: 8px;
-    margin-bottom: 8px;
-    position: relative;
-    padding: 8px 0px 8px 16px;
-    border-radius: 16px;
-    background-color: var(--m-bg);
-    color: var(--alt-fg);
-    box-shadow: 0px 2px 4px rgba(45, 35, 66, 0.2),0px 7px 13px -3px rgba(45, 35, 66, 0.1);    
-    transition: box-shadow 0.1s ease-in-out;
-    p {
-        position: relative;
-        padding: 8px 0px 8px 16px;
-    }
-}
-.accdetails {
-    width: 400px;
-    height: 50px;
-    background: radial-gradient( 100% 100% at 100% 0%, var(--i-1) 0%, var(--i-2) 100% );
-    color: var(--m-fg);
-    opacity: 1;
-    input {
-        width: 95%;
-        background-color: transparent;
-        font-weight: 600;
-    }
-    ::placeholder {
-        opacity: 0.5;
-        color: var(--m-fg);
-        font-weight: 500;
-    }
-}
-.submit {
-    display: flex;
-    width: 100px;
-    height: 40px;
-    margin-bottom: 0px;
-    font-size: 18px;
-    color: var(--m-fg);
-    background-color: var(--alt-bg);
-    box-shadow: inset 0px 0px 2px rgba(58, 65, 111, 0.5);
-    //box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25), inset -8px -8px 32px rgba(88, 88, 88, 0.1), inset 8px 8px 32px rgba(255, 255, 255, 0.1);
-    input {
-        position: relative;
-        background-color: transparent;
-        vertical-align: top;
-        bottom: 5px;
-    }
-}
-.inputtest:focus-within:not(.submit) {
-    //box-shadow: 0px 0px 8px #4588ED, 0px 0px 8px #4588ED;
-    box-shadow: 0px 2px 4px rgba(45, 35, 66, 0.4),0px 7px 13px -3px rgba(45, 35, 66, 0.3),inset 0px -4px 0px rgba(58, 65, 111, 0.5);
-    color: #ffffff;
-}
-/* random grabbed button things
-background: radial-gradient( 100% 100% at 100% 0%, #5ADAFF 0%, #5468FF 100% );
-box-shadow: 0px 2px 4px rgba(45, 35, 66, 0.4),0px 7px 13px -3px rgba(45, 35, 66, 0.3),inset 0px -3px 0px rgba(58, 65, 111, 0.5);
-text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
-
-#0033ff
-*/
+}*/
