@@ -1,4 +1,6 @@
-/// Here most colors are set, mainly for dark mode compatiblity.
+/// Here theme variables are set.
+
+@import 'font.scss';
 
 @media (prefers-color-scheme: light) {
     body {
