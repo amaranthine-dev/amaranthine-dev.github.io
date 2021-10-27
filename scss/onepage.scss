@@ -5,6 +5,7 @@
 :root {
     @media only screen and (max-width: 500px) {
         --pad: 32px;
+        --mar: 16px;
         h1 {
             @include Jet(2, 15);
         }
@@ -14,6 +15,7 @@
     }
     @media only screen and (min-width: 500px) {
         --pad: 32px;
+        --mar: 32px;
         h1 {
             @include Jet(3, 15);
         }
@@ -49,7 +51,7 @@ body {
 
 h1 {
     //@include Jet(var(--s-h1));
-    margin-bottom: 32px;
+    margin-bottom: var(--mar);
     color: var(--m-fg);
     font-weight: 700;
     overflow-wrap: break-word;
