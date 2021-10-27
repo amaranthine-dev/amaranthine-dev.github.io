@@ -1,0 +1,54 @@
+@import 'modules/reset.scss';
+@import 'modules/theme.scss';
+@import 'modules/onepagefont.scss';
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: var(--m-bg);
+    color: var(--m-fg);
+    font-family: var(--f-body);
+}
+
+.mainpagecontainer {
+    margin: 64px;
+}
+
+h1 {
+    @include Jet(4, 20);
+    margin-bottom: 64px;
+    color: var(--m-fg);
+    font-weight: 700;
+}
+
+p {
+    @include Jet(2, 10);
+    color: var(--m-fg);
+    margin-bottom: 64px;
+}
+
+a {
+    background: linear-gradient(to right, var(--l-1), var(--l-2));
+    background-size: 300% 25%;
+    background-repeat: no-repeat;
+    background-position: 0 120%;
+    transition-property: background-position;
+    transition-duration: 250ms;
+    padding: 0;
+    color: var(--m-fg);
+    font-family: var(--f-link);
+    text-decoration: none;
+}
+
+a:hover {
+    background-position: 100% 100%;
+}
+
+rt {
+    font-size: 12pt;
+    font-style: italic;
+    color: var(--rt);
+}
+
