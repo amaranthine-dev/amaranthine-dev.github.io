@@ -2,6 +2,27 @@
 @import 'modules/theme.scss';
 @import 'modules/onepagefont.scss';
 
+:root {
+    @media only screen and (max-width: 500px) {
+        --pad: 32px;
+        h1 {
+            @include Jet(2, 15);
+        }
+        p {
+            @include Jet(0.75, 3.5);
+        }
+    }
+    @media only screen and (min-width: 500px) {
+        --pad: 32px;
+        h1 {
+            @include Jet(3, 15);
+        }
+        p {
+            @include Jet(1, 5);
+        }
+    }
+}
+
 html, body {
     height: 100%;
 }
@@ -10,23 +31,34 @@ body {
     background-color: var(--m-bg);
     color: var(--m-fg);
     font-family: var(--f-body);
+    overflow: hidden;
 }
 
 .mainpagecontainer {
-    margin: 64px;
+    padding: var(--pad);
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+    max-width: 775px;
+    //@media (prefers-color-scheme: dark) {
+    
 }
 
 h1 {
-    @include Jet(4, 20);
-    margin-bottom: 64px;
+    //@include Jet(var(--s-h1));
+    margin-bottom: 32px;
     color: var(--m-fg);
     font-weight: 700;
+    overflow-wrap: break-word;
 }
 
 p {
-    @include Jet(2, 10);
+    //@include Jet(1, 5);
     color: var(--m-fg);
-    margin-bottom: 64px;
+    margin-bottom: 16px;
 }
 
 a {
@@ -40,6 +72,7 @@ a {
     color: var(--m-fg);
     font-family: var(--f-link);
     text-decoration: none;
+    font-style: italic;
 }
 
 a:hover {
