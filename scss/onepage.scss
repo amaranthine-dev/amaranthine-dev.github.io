@@ -4,24 +4,32 @@
 
 :root {
     @media only screen and (max-width: 500px) {
-        --pad: 32px;
-        --mar: 16px;
+        /*--pad: 32px;
+        --mar: 32px;
+        h1 {
+            @include Jet(1.5, 15);
+        }
+        p {
+            @include Jet(1, 5);
+        }*/
+    }
+    @media only screen and (min-width: 500px) {
+        /*--pad: 32px;
+        --mar: 32px;
         h1 {
             @include Jet(2, 15);
         }
         p {
             @include Jet(1, 5);
-        }
+        }*/
     }
-    @media only screen and (min-width: 500px) {
-        --pad: 32px;
-        --mar: 32px;
-        h1 {
-            @include Jet(3, 15);
-        }
-        p {
-            @include Jet(1, 5);
-        }
+    --pad: 32px;
+    --mar: 32px;
+    h1 {
+        @include Jet(2, 15);
+    }
+    p {
+        @include Jet(1, 5);
     }
 }
 
