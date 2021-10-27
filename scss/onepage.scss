@@ -9,7 +9,7 @@
             @include Jet(2, 15);
         }
         p {
-            @include Jet(0.75, 3.5);
+            @include Jet(0.9, 4.5);
         }
     }
     @media only screen and (min-width: 500px) {
