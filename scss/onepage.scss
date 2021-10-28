@@ -63,13 +63,14 @@ h1 {
     //@include Jet(var(--s-h1));
     margin-bottom: var(--mar);
     color: var(--m-fg);
-    font-weight: 700;
+    font-style: bold;
     overflow-wrap: break-word;
 }
 
 p {
     //@include Jet(1, 5);
     color: var(--m-fg);
+    font-style: normal;
     margin-bottom: 16px;
 }
 
