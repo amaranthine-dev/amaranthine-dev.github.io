@@ -1,5 +1,19 @@
-@import 'fonts/JetBrainsMono-VariableFont_wght.ttf';
-@import 'fonts/JetBrainsMono-Italic-VariableFont_wght.ttf';
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: local("JetBrains Mono"),
+  url("../scss/modules/fonts/JetBrainsMono-VariableFont_wght.woff2") format('woff2');
+  unicode-range: U+000-5FF; /* Latin glyphs */
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: italic;
+  font-weight: 400;
+  src: local("JetBrains Mono"),
+  url("../scss/modules/fonts/JetBrainsMono-Italic-VariableFont_wght.woff2") format('woff2');
+  unicode-range: U+000-5FF; /* Latin glyphs */
+}
 
 /** Our system will use a 4px base vertical rhythm */
 $verticalRhythmBase: 4;
