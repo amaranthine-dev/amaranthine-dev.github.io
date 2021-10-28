@@ -1,8 +1,8 @@
+@import 'modules/onepagefont.scss';
 @import 'modules/reset.scss';
 @import 'modules/theme.scss';
-@import url("../scss/modules/fonts/JetBrainsMono-Italic-VariableFont_wght.woff2");
-@import url("../scss/modules/fonts/JetBrainsMono-VariableFont_wght.woff2");
-@import 'modules/onepagefont.scss';
+//@import url("../scss/modules/fonts/JetBrainsMono-Italic-VariableFont_wght.woff2");
+//@import url("../scss/modules/fonts/JetBrainsMono-VariableFont_wght.woff2");
 
 :root {
     @media only screen and (max-width: 500px) {
