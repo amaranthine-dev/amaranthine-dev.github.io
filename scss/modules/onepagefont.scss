@@ -1,17 +1,29 @@
+
 @font-face {
-  font-family: 'jetbrains_monoitalic';
-  src: url('jetbrainsmono-italic-variablefont_wght-webfont.woff2') format('woff2'),
-       url('jetbrainsmono-italic-variablefont_wght-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'jetbrains_monoregular';
-  src: url('jetbrainsmono-variablefont_wght-webfont.woff2') format('woff2'),
-       url('jetbrainsmono-variablefont_wght-webfont.woff') format('woff');
-  font-weight: normal;
+  font-family: 'JetBrains Mono';
   font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v6/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwgknk-4.woff2) format('woff2');
+  display: swap;
+  unicode-range: U+0000-00FF;
 }
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v6/tDba2o-flEEny0FZhsfKu5WU4xD-IQ-PuZJJXxfpAO-LfmOXmaSxggPBcV8.woff) format('woff');
+  display: swap;
+  unicode-range: U+0000-00FF;
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v6/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwgknk-4.woff2) format('woff2');
+  display: swap;
+  unicode-range: U+0000-00FF;
+}
+
 
 /** Our system will use a 4px base vertical rhythm */
 $verticalRhythmBase: 4;
